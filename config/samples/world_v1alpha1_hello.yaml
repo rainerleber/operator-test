@@ -1,0 +1,17 @@
+apiVersion: world.leber.io/v1alpha1
+kind: Hello
+metadata:
+  labels:
+    app.kubernetes.io/name: hello
+    app.kubernetes.io/instance: hello-sample
+    app.kubernetes.io/part-of: operator-test
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator-test
+  name: hello-sample
+spec:
+  returntext: "Hello World"
+  returncode: 200
+  returnjson: '{"message": "Hello World"}'
+  returnyaml: "message: Hello World"
+  returnxml: "<message>Hello World</message>"
+  returnhtml: "<html><body><h1>Hello World</h1></body></html>"

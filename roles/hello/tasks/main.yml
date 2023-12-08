@@ -1,0 +1,9 @@
+---
+# tasks file for Hello
+- name: Hello
+  ansible.builtin.debug:
+    msg: "{{ returntext }}"
+
+- name: Hello
+  ansible.builtin.debug:
+    msg: "{{ returntext }}"
